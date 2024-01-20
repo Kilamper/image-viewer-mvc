@@ -8,7 +8,7 @@ Image Viewer es una aplicación de visualización de imágenes desarrollada en J
 
 - **Interfaz Gráfica Intuitiva:** Una interfaz de usuario fácil de usar que permite a los usuarios navegar y visualizar imágenes de manera cómoda.
 
-* **Carga de Imágenes:** La aplicación permite a los usuarios cargar imágenes desde su sistema de archivos local mediante un selector de carpeta.
+* **Carga de Imágenes:** La aplicación permite a los usuarios cargar imágenes desde su sistema de archivos local mediante un selector de carpeta. Los formatos de imágenes compatibles son: ".jpg", ".png", ".jpeg", ".bmp", ".tiff" y ".gif" (aunque este último solo mostrará el primer frame de la animación y no la animación completa).
 
 + **Gestión de Imágenes:** Los usuarios pueden realizar operaciones básicas como navegar hacia adelante y hacia atrás utilizando botones. También se puede ver el nombre de la imagen y el porcentaje al que ha sido escalada para permitir su visualización.
 
