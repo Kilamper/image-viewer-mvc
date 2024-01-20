@@ -1,4 +1,4 @@
-# Image Viewer - Proyecto Java
+# Image Viewer - MVC
 
 ## Descripción
 
