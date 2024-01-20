@@ -15,3 +15,9 @@ Image Viewer es una aplicación de visualización de imágenes desarrollada en J
 ## Patrón de Diseño
 
 La arquitectura de Image Viewer sigue el patrón de diseño MVC para asegurar una separación clara de las preocupaciones y facilitar el mantenimiento y la extensión del código.
+
+- **Modelo (Model):** Se encarga de la gestión de datos, incluyendo la carga y almacenamiento de imágenes.
+
+* **Vista (View):** Presenta la interfaz de usuario al usuario y maneja las interacciones con el usuario.
+
++ **Controlador (Controller):** Responde a las acciones del usuario, manipula el modelo y actualiza la vista en consecuencia.
