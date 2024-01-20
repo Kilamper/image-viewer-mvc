@@ -11,7 +11,7 @@ public class FileImageLoader implements ImageLoader {
         this.files = folder.listFiles(isImage());
     }
 
-    private static final Set<String> imageExtensions = Set.of(".jpg", ".png", ".jpeg");
+    private static final Set<String> imageExtensions = Set.of(".jpg", ".png", ".jpeg", ".bmp", ".tiff", ".gif");
 
     private static FilenameFilter isImage() {
         return (dir, name) -> imageExtensions.stream().anyMatch(name::endsWith);
