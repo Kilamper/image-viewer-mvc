@@ -5,6 +5,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class PathFrame extends JFrame implements ActionListener {
     private String path;
@@ -13,8 +15,9 @@ public class PathFrame extends JFrame implements ActionListener {
     private JButton cancel;
     private JButton select;
 
-    public PathFrame() {
-        ImageIcon icon = new ImageIcon("src/main/resources/Image_Viewer.png");
+    public PathFrame() throws MalformedURLException {
+        URL url = new URL("https://sunrust.org/wiki/images/a/a9/Gallery_icon.png");
+        ImageIcon icon = new ImageIcon(url);
         this.setIconImage(icon.getImage());
         this.setTitle("Image Viewer (Desktop Version)");
         this.setSize(380, 160);
@@ -24,7 +27,7 @@ public class PathFrame extends JFrame implements ActionListener {
         this.add(createPanel());
     }
 
-    private Component createPanel() {
+    private Component createPanel() throws MalformedURLException {
         JPanel panel = new JPanel();
         JLabel label = new JLabel("Select a directory:");
         label.setBounds(10, 10, 200, 30);
@@ -53,8 +56,9 @@ public class PathFrame extends JFrame implements ActionListener {
         cancel.addActionListener(this);
     }
 
-    private void createSelectButton() {
-        ImageIcon icon = new ImageIcon("src/main/resources/Select_Folder.png");
+    private void createSelectButton() throws MalformedURLException {
+        URL url = new URL("https://cdn1.iconfinder.com/data/icons/document-edit-line/64/Document-doc-file-folder-bundle-sheaf-archive-16.png");
+        ImageIcon icon = new ImageIcon(url);
         select = new JButton("");
         select.setIcon(icon);
         select.setBounds(310, 40, 40, 25);

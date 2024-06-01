@@ -6,11 +6,12 @@ import software.ulpgc.imageviewer.command.NextImageCommand;
 import software.ulpgc.imageviewer.command.PreviousImageCommand;
 
 import java.io.File;
+import java.net.MalformedURLException;
 
 public class Main {
     public static String root;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MalformedURLException {
         PathFrame pathFrame = new PathFrame();
         pathFrame.setVisible(true);
         while (root == null) {
