@@ -21,3 +21,5 @@ La arquitectura de Image Viewer sigue el patrón de diseño MVC para asegurar un
 * **Vista (View):** Presenta la interfaz de usuario al usuario y maneja las interacciones con el usuario.
 
 + **Controlador (Controller):** Responde a las acciones del usuario, manipula el modelo y actualiza la vista en consecuencia.
+
+<img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/88ad848a-696f-467e-b4ec-a9abbe228dbc" />
